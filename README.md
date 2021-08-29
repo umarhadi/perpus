@@ -1,11 +1,11 @@
-## Sistem Informasi Perpustakaan SDN 4 Gabus
+# Sistem Informasi Perpustakaan SDN 4 Gabus
 
-### default login
-
-#### petugas perpustakaan
-username: pio
+## default login
+---
+### petugas perpustakaan
+username: pio<br>
 password: 1
 
-#### anggota
-username: umar
+### anggota perpustakaan
+username: umar<br>
 password: 123
