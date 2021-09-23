@@ -1,5 +1,8 @@
 # Sistem Informasi Perpustakaan SDN 4 Gabus
 
+## Tech
+Codeigniter 3.1.11
+
 ## default login
 ---
 ### petugas perpustakaan
