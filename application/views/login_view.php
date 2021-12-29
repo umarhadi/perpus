@@ -1,102 +1,104 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed');?>
+<?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><?php echo $title_web;?></title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.7 -->
-  <link rel="shortcut icon" href="" />
-  <link rel="stylesheet" href="<?php echo base_url('assets_style/assets/bower_components/bootstrap/dist/css/bootstrap.min.css');?>">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?php echo base_url('assets_style/assets/bower_components/font-awesome/css/font-awesome.min.css');?>">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="<?php echo base_url('assets_style/assets/bower_components/Ionicons/css/ionicons.min.css');?>">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url('assets_style/assets/dist/css/AdminLTE.min.css');?>">
-  <link rel="stylesheet" href="<?php echo base_url('assets_style/assets/dist/css/responsivelogin.css');?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title><?php echo $title_web; ?></title>
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+  <link href="<?= base_url('assets/'); ?>/css/style.css" rel="stylesheet" type="text/css">
+</head>
 
-  <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"><style type="text/css">
-        .navbar-inverse{
-        background-color:#333;
-         }
-         .navbar-color{
-        color:#fff;
-         }
-          blink, .blink {
-                animation: blinker 3s linear infinite;
-            }
+<body>
 
-           @keyframes blinker {
-                50% { opacity: 0; }
-           }
-    </style>
-  </head>
-<body class="hold-transition login-page" style="overflow-y: hidden;background:url(
-	'<?php echo base_url('assets_style/image/bg-login.jpg');?>')no-repeat;background-size:100%;">
-<div class="login-box">
-	<br/>
-  <div class="login-box-body text-center bg-white">
-    <h3><a href="index.php" style="color: #226bbf;">Sistem Informasi Perpustakaan <br/><b>SDN 4 Gabus</b></a></h3>
-  </div>
-  <p>
-  <div id="tampilalert"></div>
-  <!-- /.login-logo -->
-  <div class="login-box-body" style="border:2px solid #226bbf;">
-    <p class="login-box-msg" style="font-size:16px;"></p>
-    <form action="<?= base_url('login/auth');?>" method="POST">
-      <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Username" id="user" name="user" required="required" autocomplete="off">
-        <span class="glyphicon glyphicon-user form-control-feedback"></span>
-      </div>
-      <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password" id="pass" name="pass" required="required" autocomplete="off">
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-      </div>
-      <div class="row">
-        <div class="col-xs-8">
-        <!-- /.col
-          <div class="checkbox icheck">
-            <label>
-              <input type="checkbox" name="remember" id="remember" value="R1"> Remember Me
-            </label>
-          </div>-->
-          <!-- /.social-auth-links -->
+  <div class="hk-wrapper">
+
+    <!-- Main Content -->
+    <div class="hk-pg-wrapper hk-auth-wrapper">
+      <header class="d-flex justify-content-between align-items-center">
+        <a class="d-flex auth-brand badge badge-outline" href="#">
+          <h3 class="text-white">Perpustakaan SDN 4 Gabus</h3>
+        </a>
+      </header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-5 pa-0">
+            <div id="owl_demo_1" class="owl-carousel dots-on-item owl-theme">
+              <div class="fadeOut item auth-cover-img overlay-wrap" style="background-image:url(<?= base_url('assets/'); ?>/img/bg2.jpg);">
+                <div class="auth-cover-info py-xl-0 pt-100 pb-50">
+                  <div class="auth-cover-content text-center w-xxl-75 w-sm-90 w-xs-100">
+                    <h3 class="display-4 text-white mb-20">Perpustakaan yang buruk membangun koleksi, perpustakaan yang baik membangun layanan, perpustakaan yang hebat membangun komunitas.</h3>
+                    <p class="text-white">- R. David Lankes</p>
+                  </div>
+                </div>
+                <div class="bg-overlay bg-trans-dark-50"></div>
+              </div>
+              <div class="fadeOut item auth-cover-img overlay-wrap" style="background-image:url(<?= base_url('assets/'); ?>/img/bg1.jpg);">
+                <div class="auth-cover-info py-xl-0 pt-100 pb-50">
+                  <div class="auth-cover-content text-center w-xxl-75 w-sm-90 w-xs-100">
+                    <h3 class="display-4 text-white mb-20">Berapa pun biaya perpustakaan kami, harganya murah dibandingkan dengan bangsa yang tidak tahu apa-apa.</h3>
+                    <p class="text-white">- Walter Cronkite</p>
+                  </div>
+                </div>
+                <div class="bg-overlay bg-trans-dark-50"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-7 pa-0">
+            <div class="auth-form-wrap py-xl-0 py-50">
+              <div class="auth-form w-xxl-55 w-xl-75 w-sm-90 w-xs-100">
+                <form action="<?= base_url('login/auth'); ?>" method="POST">
+                  <h1 class="display-4 mb-10">Selamat Datang:)</h1>
+                  <p class="mb-30">Silahkan login untuk meminjam atau mengembalikan buku.</p>
+                  <div class="form-group">
+                    <input class="form-control" placeholder="Nama Pengguna" type="text" id="user" name="user">
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input class="form-control" placeholder="Kata Sandi" type="password" id="pass" name="pass">
+                      <div class="input-group-append">
+                        <span class="input-group-text"><span class="feather-icon"><i data-feather="eye-off"></i></span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary btn-block" type="submit">Login</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-xs-4">
-          <button type="submit" id="loding" class="btn btn-primary btn-block btn-flat">Sign In</button>
-          <div id="loadingcuy"></div>
-        </div>
-        <!-- /.col -->
       </div>
-    </form>
-  </div>
-  <!-- /.login-box-body -->
-  <br/>
-  <footer>
-    <div class="login-box-body text-center bg-white">
-       <a style="color: black;"> &copy; <?php echo date("Y");?> Sistem Perpustakaan SDN 4 Gabus
     </div>
-  </footer>
-</div>
-<!-- /.login-box -->
-<!-- Response Ajax -->
-<div id="tampilkan"></div>
-<!-- jQuery 3 -->
-<script src="<?php echo base_url('assets_style/assets/bower_components/jquery/dist/jquery.min.js');?>"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="<?php echo base_url('assets_style/assets/bower_components/bootstrap/dist/js/bootstrap.min.js');?>"></script>
-<!-- iCheck -->
-<script src="<?php echo base_url('assets_style/assets/plugins/iCheck/icheck.min.js');?>"></script>
+    <!-- /Main Content -->
+
+  </div>
+  <!-- /HK Wrapper -->
+
+  <!-- jQuery -->
+  <script src="<?= base_url('assets/'); ?>/vendors/jquery/dist/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="<?= base_url('assets/'); ?>/vendors/popper.js/dist/umd/popper.min.js"></script>
+  <script src="<?= base_url('assets/'); ?>/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- Slimscroll JavaScript -->
+  <script src="<?= base_url('assets/'); ?>/js/jquery.slimscroll.js"></script>
+
+  <!-- Fancy Dropdown JS -->
+  <script src="<?= base_url('assets/'); ?>/js/dropdown-bootstrap-extended.js"></script>
+
+  <!-- Owl JavaScript -->
+  <script src="<?= base_url('assets/'); ?>/vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+
+  <!-- FeatherIcons JavaScript -->
+  <script src="<?= base_url('assets/'); ?>/js/feather.min.js"></script>
+
+  <!-- Init JavaScript -->
+  <script src="<?= base_url('assets/'); ?>/js/init.js"></script>
+  <script src="<?= base_url('assets/'); ?>/js/login-data.js"></script>
 </body>
+
+
 </html>
