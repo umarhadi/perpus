@@ -12,7 +12,9 @@
 </head>
 
 <body>
-
+  <div class="preloader-it">
+    <div class="loader-pendulums"></div>
+  </div>
   <div class="hk-wrapper">
 
     <!-- Main Content -->
