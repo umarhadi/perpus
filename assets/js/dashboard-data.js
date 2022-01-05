@@ -3,16 +3,16 @@
 "use strict"; 
 $(document).ready(function() {
 	/*Toaster Alert*/
-	$.toast({
-		heading: 'Well done!',
-		text: '<p>You have successfully completed level 1.</p><button class="btn btn-primary btn-sm mt-10">Play again</button>',
-		position: 'top-right',
-		loaderBg:'#88c241',
-		class: 'jq-toast-primary',
-		hideAfter: 3500, 
-		stack: 6,
-		showHideTransition: 'fade'
-	});
+	// $.toast({
+	// 	heading: 'Well done!',
+	// 	text: '<p>You have successfully completed level 1.</p><button class="btn btn-primary btn-sm mt-10">Play again</button>',
+	// 	position: 'top-right',
+	// 	loaderBg:'#88c241',
+	// 	class: 'jq-toast-primary',
+	// 	hideAfter: 3500, 
+	// 	stack: 6,
+	// 	showHideTransition: 'fade'
+	// });
 	if($('#area_chart').length > 0) {
 		var data=[{
             period: 'Son',
