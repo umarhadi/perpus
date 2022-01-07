@@ -64,7 +64,8 @@
                             echo 'active';
                         } ?>">
                                         <a class="nav-link" href="<?php echo base_url("data"); ?>" class="cursor">
-                                            <span class="fa fa-book"></span> Data Buku
+                                            <span class="fa fa-book"></span>
+                                            <span class="nav-link-text">&nbsp;Data Buku</span>
 
                                         </a>
                                     </li>
@@ -72,7 +73,7 @@
                                                             echo 'active';
                                                         } ?>">
                                         <a class="nav-link" href="<?php echo base_url("data/kategori"); ?>" class="cursor">
-                                            <span class="fa fa-tags"></span> Kategori
+                                            <span class="fa fa-tags"></span>&nbsp;Kategori
 
                                         </a>
                                     </li>
@@ -80,7 +81,7 @@
                                                             echo 'active';
                                                         } ?>">
                                         <a class="nav-link" href="<?php echo base_url("data/rak"); ?>" class="cursor">
-                                            <span class="fa fa-list"></span> Rak
+                                            <span class="fa fa-list"></span>&nbsp;Rak
 
                                         </a>
                                     </li>
@@ -114,12 +115,12 @@
                                     <li class="nav-item <?php if ($this->uri->uri_string() == 'transaksi') {
                                                             echo 'active';
                                                         } ?> <?php if ($this->uri->uri_string() == 'transaksi/pinjam') {
-                                                                        echo 'active';
-                                                                    } ?> <?php if ($this->uri->uri_string() == 'transaksi/kembalipinjam/' . $this->uri->segment('3')) {
+                                                                    echo 'active';
+                                                                } ?> <?php if ($this->uri->uri_string() == 'transaksi/kembalipinjam/' . $this->uri->segment('3')) {
                                                                                 echo 'active';
                                                                             } ?>">
                                         <a class="nav-link" href="<?php echo base_url("transaksi"); ?>" class="cursor">
-                                            <span class="fa fa-upload"></span> Peminjaman
+                                            <span class="fa fa-upload"></span>&nbsp;Peminjaman
 
                                         </a>
                                     </li>
@@ -127,7 +128,7 @@
                                                             echo 'active';
                                                         } ?>">
                                         <a class="nav-link" href="<?php echo base_url("transaksi/kembali"); ?>" class="cursor">
-                                            <span class="fa fa-download"></span> Pengembalian
+                                            <span class="fa fa-download"></span>&nbsp;Pengembalian
                                         </a>
                                     </li>
                                 </ul>
@@ -147,15 +148,17 @@
                     <li class="nav-item <?php if ($this->uri->uri_string() == 'transaksi') {
                                             echo 'active';
                                         } ?>">
-                        <a class="nav-link" href="<?php echo base_url("transaksi"); ?>" class="cursor">
-                            <i class="fa fa-upload"></i> <span>Data Peminjaman </span>
+                        <a class="nav-link" href="<?php echo base_url("transaksi"); ?>">
+                            <span class="feather-icon"><i data-feather="download"></i></span>
+                            <span class="nav-link-text">Data Peminjaman</span>
                         </a>
                     </li>
                     <li class="nav-item <?php if ($this->uri->uri_string() == 'transaksi/kembali') {
                                             echo 'active';
                                         } ?>">
-                        <a class="nav-link" href="<?php echo base_url("transaksi/kembali"); ?>" class="cursor">
-                            <i class="fa fa-upload"></i> <span>Data Pengambilan</span>
+                        <a class="nav-link" href="<?php echo base_url("transaksi/kembali"); ?>">
+                            <span class="feather-icon"><i data-feather="upload"></i></span>
+                            <span class="nav-link-text">Data Pengembalian</span>
                         </a>
                     </li>
                     <li class="nav-item <?php if ($this->uri->uri_string() == 'data') {
@@ -163,20 +166,23 @@
                                         } ?> <?php if ($this->uri->uri_string() == 'data/bukudetail/' . $this->uri->segment('3')) {
                                                     echo 'active';
                                                 } ?>">
-                        <a class="nav-link" href="<?php echo base_url("data"); ?>" class="cursor">
-                            <i class="fa fa-search"></i> <span>Cari Buku</span>
+                        <a class="nav-link" href="<?php echo base_url("data"); ?>">
+                            <span class="feather-icon"><i data-feather="search"></i></span>
+                            <span class="nav-link-text">Cari Buku</span>
                         </a>
                     </li>
                     <li class="nav-item <?php if ($this->uri->uri_string() == 'user/edit/' . $this->uri->segment('3')) {
                                             echo 'active';
                                         } ?>">
                         <a class="nav-link" href="<?php echo base_url('user/edit/' . $this->session->userdata('ses_id')); ?>" class="cursor">
-                            <i class="fa fa-user"></i> <span>Data Anggota</span>
+                            <span class="feather-icon"><i data-feather="user"></i></span>
+                            <span class="nav-link-text">Data Anggota</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url('user/detail/' . $this->session->userdata('ses_id')); ?>" target="_blank" class="cursor">
-                            <i class="fa fa-print"></i> <span>Cetak kartu Anggota</span>
+                            <span class="feather-icon"><i data-feather="printer"></i></span>
+                            <span class="nav-link-text">Cetak Kartu Anggota</span>
                         </a>
                     </li>
                 <?php } ?>

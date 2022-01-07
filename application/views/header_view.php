@@ -20,9 +20,10 @@
     });
   </script>
 </head>
+
 <body>
   <div class="hk-wrapper hk-vertical-nav">
-    <nav class="navbar navbar-expand-xl navbar-dark fixed-top hk-navbar">
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top hk-navbar">
       <a id="navbar_toggle_btn" class="navbar-toggle-btn nav-link-hover" href="javascript:void(0);"><span class="feather-icon"><i data-feather="menu"></i></span></a>
       <a class="navbar-brand" href="<?php echo base_url('index.php/dashboard'); ?>">
         Perpus SDN 4 Gabus
@@ -53,7 +54,7 @@
             </div>
           </a>
           <div class="dropdown-menu dropdown-menu-right" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
-            <a class="dropdown-item" href="profile.html"><i class="dropdown-icon zmdi zmdi-account"></i><span>Edit Akun</span></a>
+            <a class="dropdown-item" href="<?= base_url('user/edit/' . $idbo); ?>"><i class="dropdown-icon zmdi zmdi-account"></i><span>Edit Akun</span></a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="<?php echo base_url(); ?>login/logout"><i class="dropdown-icon zmdi zmdi-power"></i><span>Log out</span></a>
           </div>
